@@ -1,0 +1,25 @@
+{
+    "name": "newidc/easypanel",
+    "type": "library",
+    "require": {
+        "moqiaoduo/new-idc-plugin": "^0.3.0",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "moqiaoduo",
+            "email": "415372363@qq.com"
+        }
+    ],
+    "description": "NewIDC的Easypanel插件",
+    "autoload": {
+        "psr-4": {
+            "NewIDC\\EasyPanel\\": "src/"
+        }
+    }
+}
