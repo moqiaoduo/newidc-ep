@@ -21,5 +21,12 @@
         "psr-4": {
             "NewIDC\\EasyPanel\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NewIDC\\EasyPanel\\EasyPanelServiceProvider"
+            ]
+        }
     }
 }
