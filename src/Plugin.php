@@ -101,7 +101,7 @@ HTML;
 <form method="post" action="http://{$this->getHost()}:{$this->getPort()}/admin/?c=session&a=login" target="_blank">
 <input type="hidden" name="username" value="{$this->server->username}">
 <input type="hidden" name="passwd" value="{$this->server->password}">
-<button type="submit" class="layui-btn">登录管理</button>
+<button type="submit" class="btn btn-success">登录管理</button>
 </form>
 HTML;
     }
@@ -134,12 +134,7 @@ HTML;
                 array (
                     'label' => 'CDN',
                     'help' => '是否开设CDN服务',
-                    'type' => 'radio',
-                    'options' =>
-                        array (
-                            1 => '是',
-                            0 => '否',
-                        ),
+                    'type' => 'switch',
                     'default' => 0,
                 ),
             'web_quota' =>
@@ -151,7 +146,6 @@ HTML;
             'db_type' =>
                 array (
                     'label' => '数据库类型',
-                    'help' => NULL,
                     'options' =>
                         array (
                             'mysql' => 'MySQL',
@@ -169,13 +163,7 @@ HTML;
             'ftp' =>
                 array (
                     'label' => 'FTP',
-                    'help' => NULL,
-                    'type' => 'radio',
-                    'options' =>
-                        array (
-                            1 => '开启',
-                            0 => '关闭',
-                        ),
+                    'type' => 'switch',
                     'default' => 1,
                 ),
             'ftp_connect' =>
@@ -199,13 +187,7 @@ HTML;
             'log_file' =>
                 array (
                     'label' => '独立日志',
-                    'help' => NULL,
-                    'type' => 'radio',
-                    'options' =>
-                        array (
-                            1 => '开启',
-                            0 => '关闭',
-                        ),
+                    'type' => 'switch',
                     'default' => 0,
                 ),
             'domain' =>
@@ -237,12 +219,7 @@ HTML;
                 array (
                     'label' => '允许绑定子目录',
                     'help' => '是否允许绑定域名到子目录',
-                    'type' => 'radio',
-                    'options' =>
-                        array (
-                            1 => '是',
-                            0 => '否',
-                        ),
+                    'type' => 'switch',
                     'default' => 1,
                 ),
             'max_subdir' =>
@@ -260,37 +237,23 @@ HTML;
             'max_worker' =>
                 array (
                     'label' => '工作数',
-                    'help' => NULL,
                     'type' => 'text',
                 ),
             'htaccess' =>
                 array (
                     'label' => '启用htaccess',
-                    'help' => NULL,
-                    'type' => 'radio',
-                    'options' =>
-                        array (
-                            1 => '开启',
-                            0 => '关闭',
-                        ),
+                    'type' => 'switch',
                     'default' => 1,
                 ),
             'log_handle' =>
                 array (
                     'label' => '是否开启日志分析功能',
-                    'help' => NULL,
-                    'type' => 'radio',
-                    'options' =>
-                        array (
-                            1 => '开启',
-                            0 => '关闭',
-                        ),
+                    'type' => 'switch',
                     'default' => 0,
                 ),
             '<p>下面的设置可能会有冲突，请注意</p>' =>
                 array (
                     'label' => '注意',
-                    'help' => NULL,
                     'type' => 'html',
                 ),
             'templete' =>
@@ -309,7 +272,7 @@ HTML;
                 array (
                     'label' => '模块',
                     'help' => '如果使用空间类型和语言引擎的话请不要选!!选中将无法使用,并且选择没安装的话就无法使用了',
-                    'type' => 'select',
+                    'type' => 'radio',
                     'options' =>
                         array (
                             'php' => 'php',
