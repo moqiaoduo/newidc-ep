@@ -8,7 +8,7 @@ class Plugin extends Server
 {
     protected $name = 'Easypanel';
 
-    protected $version = '0.1.0';
+    protected $version = '0.1.3';
 
     protected $description = 'Easypanel对接插件';
 
