@@ -52,7 +52,7 @@ class Plugin extends Server
         }
     }
 
-    public function recover()
+    public function unsuspend()
     {
         $ep = new EasyPanel($this->getHost(), $this->getPort(), $this->server->access_key);
         $result = $ep->update_vh($this->service->username, 0);
