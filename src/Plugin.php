@@ -17,7 +17,7 @@ class Plugin extends Server
         $ep = new EasyPanel($this->getHost(), $this->getPort(), $this->server->access_key);
         $params = $this->product->server_configs;
         $params['name'] = $this->service->username;
-        $params['passwd'] = decrypt($this->service->password);
+        $params['passwd'] = $this->service->password;
         $params['vhost_domains'] = $this->service->domain;
         $params['access'] = 1;
         $result = $ep->add_vh($params);
