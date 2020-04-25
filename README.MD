@@ -1,4 +1,4 @@
-# newidc-gwp
+# newidc-ep
 
 给NewIDC写的Easypanel对接插件
 
