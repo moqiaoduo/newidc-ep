@@ -8,7 +8,7 @@ class Plugin extends Server
 {
     protected $name = 'Easypanel';
 
-    protected $version = '0.1.3';
+    protected $composer = 'newidc/easypanel';
 
     protected $description = 'Easypanel对接插件';
 
