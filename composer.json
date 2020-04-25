@@ -2,7 +2,7 @@
     "name": "newidc/easypanel",
     "type": "library",
     "require": {
-        "newidc/plugin": "^0.3.0",
+        "newidc/plugin": "^0.4",
         "ext-curl": "*",
         "ext-json": "*"
     },
