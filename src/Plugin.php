@@ -12,8 +12,6 @@ class Plugin extends Server
 
     protected $description = 'Easypanel对接插件';
 
-    protected $type = 'hosting';
-
     public function activate()
     {
         $ep = new EasyPanel($this->getHost(), $this->getPort(), $this->server->access_key);
