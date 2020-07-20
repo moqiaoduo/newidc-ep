@@ -62,7 +62,7 @@ class Plugin extends Server
             case 403:
                 return ['code' => 2, 'msg' => $result['msg']];
             default:
-                return ['code' => 4, 'msg' => $result['msg'] ?? '暂停失败'];
+                return ['code' => 4, 'msg' => $result['msg'] ?? '解除暂停失败'];
         }
     }
 
@@ -78,7 +78,7 @@ class Plugin extends Server
             case 403:
                 return ['code' => 2, 'msg' => $result['msg']];
             default:
-                return ['code' => 4, 'msg' => $result['msg'] ?? '暂停失败'];
+                return ['code' => 4, 'msg' => $result['msg'] ?? '销毁失败'];
         }
     }
 
@@ -116,7 +116,7 @@ HTML;
             case 403:
                 return ['code' => 2, 'msg' => $result['msg']];
             default:
-                return ['code' => 4, 'msg' => $result['msg'] ?? '暂停失败'];
+                return ['code' => 4, 'msg' => $result['msg'] ?? '修改密码失败'];
         }
     }
 
