@@ -85,7 +85,7 @@ class Plugin extends Server
     public function userLogin()
     {
         return <<<HTML
-<form method="post" action="http://{$this->getHost()}:{$this->getPort()}/vhost/?c=session&a=login" target="_blank">
+<form method="post" action="http://{$this->getHost(false)}:{$this->getPort()}/vhost/?c=session&a=login" target="_blank">
 <input type="hidden" name="username" value="{$this->service->username}">
 <input type="hidden" name="passwd" value="{$this->service->password}">
 <button type="submit" class="layui-btn">登录面板</button>
@@ -96,7 +96,7 @@ HTML;
     public function adminLogin()
     {
         return <<<HTML
-<form method="post" action="http://{$this->getHost()}:{$this->getPort()}/admin/?c=session&a=login" target="_blank">
+<form method="post" action="http://{$this->getHost(false)}:{$this->getPort()}/admin/?c=session&a=login" target="_blank">
 <input type="hidden" name="username" value="{$this->server->username}">
 <input type="hidden" name="passwd" value="{$this->server->password}">
 <button type="submit" class="btn btn-success">登录管理</button>
