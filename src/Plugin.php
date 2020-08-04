@@ -270,7 +270,7 @@ HTML;
                 array (
                     'label' => '模块',
                     'help' => '如果使用空间类型和语言引擎的话请不要选!!选中将无法使用,并且选择没安装的话就无法使用了',
-                    'type' => 'radio',
+                    'type' => 'select',
                     'options' => [arrayKeyValueSame(['php','iis'])],
                 ),
         );
